@@ -1,0 +1,95 @@
+<head><br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+</head>
+<body>
+
+<a href="welcome_page.html" button class="btn"><i class="fa fa-home"></i></button></a>
+
+<meta charset="UTF-8">
+<title>Add Record Form</title>
+<h1 style="text-align:center"><u><div><font color="#057dfc">R</font><font color="#1a87fa">e</font><font color="#2f90f7">g</font><font color="#53a5fc">i</font><font color="#63aefe">s</font><font color="#73b7ff">t</font><font color="#99caff">e</font><font color="#acd3fd">r</font><font color="#bedbfa">!</font></div></u></h1>
+</head>
+<body background="image/bg.jpg">
+<form action="register1.php" method="post" style="text-align:left" >
+<p><center>
+   <label style="color:white" for="id">First name - </label>
+   <input type="text" name="Fname" id="id">
+   </p>
+<p>
+   <label style="color:white" for="name">Std_no - </label>
+   <input type="text" name="Std_no" id="id">
+   </p> 
+<p>
+   <label style="color:white" for="name">Last name - </label>
+   <input type="text" name="Lname" id="id">
+   </p>
+<p>
+   <label style="color:white" for="name">Gender - </label>
+   <label style="color:white"><input type="radio"  name="Gender" value="female">Female
+   <input type="radio"  name="Gender" value="male">Male
+   <label style="color:red"><span class="error">* <?php echo $genderErr;?></span>
+   </p>    
+<p>
+<p>
+   <label style="color:white" for="name">Address - </label>
+   <textarea name="Address" rows="5" cols="40"></textarea>
+   </p>
+<p>
+   <label style="color:white" for="name">Contact - </label>
+   <input type="text" name="Contact" id="id">
+   </p><br>   
+<style>
+.button {
+  background-color: yellow; /* Yellow */
+  border: none;
+  color: black;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid yellow;
+}
+
+.button1:hover {
+  background-color: yellow;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+
+<button class="button button1">Submit</button>
+<input class="button button2" type="button" value="Cancel" onclick="window.location='http://localhost/library/register1.html'"/>
+   
+</body>
+</html>
